@@ -44,7 +44,7 @@ Build the documentation website:
 
 ## Authors
 
-TODO
+See [`CONTRIBUTING.md`](CONTRIBUTING.md#authors).
 
 ## Contributing
 
