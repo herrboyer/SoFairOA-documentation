@@ -25,7 +25,7 @@ Install `mkdocs` (recommended within a virtualenv):
 ```bash
   [virtualenv venv]
   [source venv/bin/activate]
-  pip install mkdocs
+  pip install -r requirements.txt
 ```
 
 Start the server
