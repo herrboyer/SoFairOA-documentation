@@ -52,4 +52,4 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## License
 
-[CC-BY-4.0](LICENSE.md)
+[CC-BY-4.0](LICENSE.txt)

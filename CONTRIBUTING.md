@@ -8,7 +8,7 @@ This documentation is maintained by [TODO add authors].
 
 ## Communication
 
-Communication takes place through tickets in this repository.
+Communication takes place through tickets in [this repository](https://github.com/SoFairOA/documentation).
 
 ## How to contribute
 
@@ -50,7 +50,7 @@ Git itself uses this approach. When you merge something it will generate a commi
 
 ### Legal notice
 
-All contributions to the documentation [TODO add name] are submitted under the [Community Specification License 1.0](LICENSE.md).
+All contributions to the documentation [TODO add name] are submitted under the [Creative Commons Attribution 4.0 International license](LICENSE.txt).
 Contributions to companion software tools and libraries are submitted under the open source license indicated in the corresponding software projects and files.
 
 By making a contribution to this project, you certify that the contribution was created in whole or in part by you, and you have the right to submit it under the corresponding license.
