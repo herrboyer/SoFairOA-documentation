@@ -1,0 +1,15 @@
+Dear <author_name>,
+
+We have found software mentions in your paper <paper_id> by the name <paper_title>.
+The mentions are the following:
+<software_mention_context>, <software_mention_ attributes>, <software_repository_link>
+
+Can you confirm that this software was developed during the research process of the referenced article?
+If this mention isn’t correct, can you modify the mention on this link.
+
+Please notify using this link if the mention is not your software.
+
+For your information, the software identifier will be added to the metadata record of your article, using the SWHID from Software heritage if possible.
+
+Regards,
+XXX

@@ -53,3 +53,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 ## License
 
 [CC-BY-4.0](LICENSE.txt)
+
+## Acknowledgments
+
+See [`docs/00-index.md`](docs/00-index.md).
