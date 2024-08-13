@@ -10,7 +10,7 @@ Once enabled in the CORE Dashboard, the notifications will be sent to the reposi
 
 ### 5.1 OA send mention validation request
 
-The OA sends an email notification to the author using the `<author_email>` in the OA database with the elements from step 4, following one of the email request templates in [templates](templates/).
+The OA sends an email notification to the author using the `<author_email>` in the OA database with the elements from step 4, following one of the email request templates in [templates](https://github.com/SoFairOA/documentation/tree/main/docs/templates).
 
 ### 5.2 Management of author responses
 
