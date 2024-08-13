@@ -2,7 +2,7 @@ site_name: Documentation
 repo_url: 'https://github.com/SoFairOA/documentation'
 edit_uri_template: 'blob/main/docs/{path}'
 nav:
-  - Home: 00-index.md
+  - Home: index.md
   - 'Foreword': 01-foreword.md
   - 'Introduction': 02-introduction.md
   - 'Scope': 03-scope.md
