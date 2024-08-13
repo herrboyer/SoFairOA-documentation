@@ -56,4 +56,4 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Acknowledgments
 
-See [`docs/00-index.md`](docs/index).
+See [`index.md`](docs/index.md).
