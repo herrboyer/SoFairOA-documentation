@@ -76,9 +76,9 @@ If successful, OA repository metadata is later indexed by CORE, using OAI-PMH pr
 
 The metadata and manuscript is processed by the CORE system, including the CHARS component, the CORE File System servers and the ML model component which returns a TEI/XML file with mentions.
 
-CORE will push the TEI/XML and full text to the validation module. The validation module validation request to OA repository which in turn will notify the corresponding author, representing the research team.
+CORE will push the TEI/XML and full text to the validation module. The validation module sends validation request to OA repository which in turn will notify the corresponding author, representing the research team.
 
-the corresponding author will have the possibility to validate the request.
+The corresponding author will have the possibility to validate the request.
 
 If validated, the OA repository will proceed in the archival of the software through Software Heritage and will expose the appropriate SWHID.
 
