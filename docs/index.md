@@ -1,6 +1,6 @@
 # Managing the Lifecycle of Software Assets - A Workflow Guide for Developers
 
-Copyright © 2024 SoFAIR Contributors.
+Copyright © 2024-2025 SoFAIR Contributors.
 This work is licensed under the CC-BY-4.
 
 With thanks to David Pride, Hélène Jonin, Morane Gruenpeter, Petr Knoth, Matteo Cancellieri, Alain Monteil and the full SoFAIR project consortium for their contributions.
