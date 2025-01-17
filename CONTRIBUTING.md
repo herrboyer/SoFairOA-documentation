@@ -8,21 +8,27 @@ This documentation is maintained by the CORE Team.
 
 ## Communication
 
-Communication takes place through tickets in [this repository](https://github.com/SoFairOA/documentation).
+Communication takes place through tickets in
+[this repository](https://github.com/SoFairOA/documentation).
 
 ## How to contribute
 
 ### Report a bug or suggest an enhancement
 
-Contributors may [fill an issue](https://github.com/SoFairOA/documentation/issues/new/choose) (required for major changes).
+Contributors may [fill an
+issue](https://github.com/SoFairOA/documentation/issues/new/choose) (required
+for major changes).
 
-This issue may be discussed in this dedicated place and may lead to the opening of a PR (“Pull Request”).
+This issue may be discussed in this dedicated place and may lead to the opening
+of a PR (“Pull Request”).
 
 ### Submit changes
 
-Changes can be made directly through the web interface or by forking and cloning the repository.
+Changes can be made directly through the web interface or by forking and
+cloning the repository.
 
-Contributors may [open a PR](https://github.com/SoFairOA/documentation/compare) (it can be opened directly for minor changes, such as markup and typo fixes).
+Contributors may [open a PR](https://github.com/SoFairOA/documentation/compare)
+(it can be opened directly for minor changes, such as markup and typo fixes).
 
 This PR may be discussed in this dedicated place.
 
@@ -30,33 +36,62 @@ After agreement, Maintainers may merge the PR.
 
 ### Conventions
 
-Always write a clear log message for your commits. One-line messages are fine for small changes, but significant changes should look like this:
+Always write a clear log message for your commits. One-line messages are fine
+for small changes, but significant changes should look like this:
 
     $ git commit -m "Subject of the commit
     >
-    > One ore more paragraph(s) describing what changed and its impact."
+    > One or more paragraph(s) describing what changed and its impact."
 
-A properly formed Git commit subject line should always be able to complete the following sentence: if applied, this commit will "Subject of the commit". For example :
+A properly formed Git commit subject line should always be able to complete the
+following sentence: if applied, this commit will "Subject of the commit". For
+example :
 
     [if applied, this commit will] Update CONTRIBUTING.md
     [if applied, this commit will] Add CHANGELOG.md
     [if applied, this commit will] Fix typo in README.md
 
-Git itself uses this approach. When you merge something it will generate a commit message like "Merge branch...", or when reverting "Revert...".
+Git itself uses this approach. When you merge something it will generate a
+commit message like "Merge branch...", or when reverting "Revert...".
 
-Git itself uses this approach. When you merge something it will generate a commit message like "Merge branch...", or when reverting "Revert...".
+Git itself uses this approach. When you merge something it will generate a
+commit message like "Merge branch...", or when reverting "Revert...".
+
+### Pre commit hooks
+
+It is strongly recommended to activate git
+[pre-commit](https://pre-commit.com/) hooks to help you from committing easily
+avoidable mistakes.
+
+This repository comes with a basic pre-commit hook configuration file
+(`.pre-commit-config.yaml`) including:
+- codespell for commit messages
+- codespell for committed content
+- removing trailing whitespaces
+- validate yaml or json files
+
 
 ### Legal notice
 
-All contributions to the SoFAIR documentation are submitted under the [Creative Commons Attribution 4.0 International license](LICENSE.txt).
-Contributions to companion software tools and libraries are submitted under the open source license indicated in the corresponding software projects and files.
+All contributions to the SoFAIR documentation are submitted under the [Creative
+Commons Attribution 4.0 International license](LICENSE.txt). Contributions to
+companion software tools and libraries are submitted under the open source
+license indicated in the corresponding software projects and files.
 
-By making a contribution to this project, you certify that the contribution was created in whole or in part by you, and you have the right to submit it under the corresponding license.
-You understand and agree that this project and the contribution are public and that a record of the contribution (including all personal information you submit with it, including your sign-off) is maintained indefinitely and may be redistributed consistent with this project or the license(s) involved.
+By making a contribution to this project, you certify that the contribution was
+created in whole or in part by you, and you have the right to submit it under
+the corresponding license. You understand and agree that this project and the
+contribution are public and that a record of the contribution (including all
+personal information you submit with it, including your sign-off) is maintained
+indefinitely and may be redistributed consistent with this project or the
+license(s) involved.
 
-To certify that your contribution complies with the above contribution conditions, a `Signed-off-by` line like the following (replace with your own identity):
+To certify that your contribution complies with the above contribution
+conditions, a `Signed-off-by` line like the following (replace with your own
+identity):
 
     Signed-off-by: Author Name authoremail@example.com
 
-must be included in every commit message.
-Changes made through the web interface include this line. If you use the command line, you can do this by passing the `-s` flag to `git commit`.
+must be included in every commit message. Changes made through the web
+interface include this line. If you use the command line, you can do this by
+passing the `-s` flag to `git commit`.

@@ -1,0 +1,20 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-json
+      - id: check-yaml
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.3.0
+    hooks:
+      - id: codespell
+        name: Check source code spelling
+        additional_dependencies:
+          - tomli
+        stages: [commit]
+      - id: codespell
+        name: Check commit message spelling
+        additional_dependencies:
+          - tomli
+        stages: [commit-msg]

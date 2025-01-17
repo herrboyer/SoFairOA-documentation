@@ -18,7 +18,7 @@ nav:
   - 'Step 9: Metadata deposit metadata': 19-step-9.md
   - 'Annex A: Bibliography': A-bibliography.md
 theme: readthedocs
-copyright: Copyright &copy; 2024 SoFAIR Contributors.
+copyright: Copyright &copy; 2024-2025 SoFAIR Contributors.
 markdown_extensions:
   - codehilite:
       guess_lang: false

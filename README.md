@@ -1,6 +1,7 @@
 # Documentation
 
-Documentation of the workflow for software assets lifecycle management for developers.
+Documentation of the workflow for software assets lifecycle management for
+developers.
 
 ## Deployment
 
