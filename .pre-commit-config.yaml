@@ -12,7 +12,7 @@ repos:
         name: Check source code spelling
         additional_dependencies:
           - tomli
-        stages: [commit]
+        stages: [pre-commit]
       - id: codespell
         name: Check commit message spelling
         additional_dependencies:
