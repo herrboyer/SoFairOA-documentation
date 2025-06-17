@@ -2,7 +2,8 @@ Dear <author_name>,
 
 We have found software mentions in your paper <paper_id> by the name <paper_title>.
 The mentions are the following:
-<software_mention_context>, <software_mention_ attributes>, <software_repository_link>
+<software_mention_context>, <software_mention_ attributes>,
+<software_repository_origin_link>
 
 Can you confirm that this software was developed during the research process of the referenced article?
 If this mention isn’t correct, can you modify the mention on this link.
