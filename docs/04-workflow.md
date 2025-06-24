@@ -32,13 +32,11 @@ sequenceDiagram
     Research team->>Forge: 1. share sw on forge's repo
     Research team->>OA Repository:  2. deposit manuscript
     opt moderation
-    alt revision required
-######         OA Repository-->> Research team: 2.1.1 request for modification
-        Research team->> OA Repository: 2.1.2 provide response
-
-    else rejection
-    OA Repository-->>Research team: 2.2 notify reasons for rejection
-    end
+        alt revision required
+            Research team->> OA Repository: 2.1.2 provide response
+        else rejection
+            OA Repository-->>Research team: 2.2 notify reasons for rejection
+        end
     end
     OA Repository->>Research team: 2.1.3 notify publication
     OA Repository->>OA Repository: 2.3 expose article metadata in OAI-PMH
@@ -46,8 +44,17 @@ sequenceDiagram
     OA Repository-->>CORE: Dublin Core metadata
     CORE->>CORE: 3.2 extract software mention (detailed in CORE flow sequence)
 
+    CORE->>SWH: 9.1 Notify Software Heritage of the mention
+
+    alt accept
+        SWH->>CORE: 9.2 Software Heritage accepts the mention
+    else reject
+        SWH->>CORE: 9.3 Software Heritage rejects the mention
+    end
+
     CORE->>OA Repository: 4. notify validation request
     OA Repository->>Research team: 5.1 send mention validation request
+
     alt full-acceptance
         Research team-->>OA Repository: 5.2.1 accept mentions
         OA Repository-->>CORE: 5.2.1.1 send acceptance
@@ -57,24 +64,24 @@ sequenceDiagram
         OA Repository->>OA Repository: 5.2.2.1 update record in OA
         OA Repository-->>CORE: 5.2.2.1 send new properties
         CORE->>CORE: 5.2.2.2 mark changes
+        CORE->>SWH: 9.4 Undo previous notification sent to Software Heritage
+        CORE->>SWH: 9.1 Notify Software Heritage of the (corrected) mention
     else reject or no-reply
         Research team-->>OA Repository: 5.2.3 reject mentions
         OA Repository-->>CORE: 5.2.3.1 send rejection
         CORE->>CORE: 5.2.3.2 mark mention as rejected
+        CORE->>SWH: 9.4 Undo previous notification sent to Software Heritage
+        
     end
-
 
     OA Repository->>SWH: 6 trigger software archive using API
     SWH-->>Forge: 7. visit code repo and capture last snapshot
-
     OA Repository->>SWH: 8.1 request dir SWHID using URL
     SWH-->>OA Repository: return SWHID
     OA Repository-->>Research team: 8.2 Show SWHID on article record
-    OA Repository-->>OA Repository: 8.3 Add SWHID in Dublin Core metadata
-    OA Repository->>SWH: (optional) 9 deposit metadata related to URL
 ```
 
-A research team develops software in a software forge (e.g. GitHub, Gitlab,
+A research team develops software in a software forge (e.g. GitHub, GitLab,
 etc.) using a dedicated code repository. This software is related to the
 article written by the research team.
 

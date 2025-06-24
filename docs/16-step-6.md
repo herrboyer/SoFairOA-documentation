@@ -1,20 +1,16 @@
 # Step 6: Trigger software archive using API (“Save code now”)
 
-Once validated, the repository issues an asset registration request to Software
-Heritage.
+Once validated, the repository issues a 
+[save code now](https://archive.softwareheritage.org/api/1/origin/save/doc/) request to 
+Software Heritage.
 
 ## Context
 
-Registering the asset is a mechanism to push metadata about an existing
-software artefact in Software Heritage. By doing so, the Open Access repository
-provides information on the citation of the software.
-
-Pushing metadata is possible in Software heritage using the
-[`swh-deposit`](https://docs.softwareheritage.org/devel/swh-deposit/index.html).
-
-At the same time, a `save-code-now` is triggered by the Open Access
-infrastructure to ensure the latest snapshot of the full code repository,
-including all branches and releases, is archived.
+To ensure the software artefact exists in the archive and the latest snapshot of the
+full code repository, including all branches and releases, is archived, the Open Access
+infrastructure needs to trigger a 
+[save code now](https://archive.softwareheritage.org/api/1/origin/save/doc/) request to 
+Software Heritage.
 
 **The trigger:** URL identified for save code now.
 
